@@ -1,7 +1,8 @@
 name: meteor_net
 description: A pragmatic Dio based network layer with interceptors, typed parsing, cache, retry, mock, proxy, and WebSocket support.
-version: 0.1.0
-publish_to: none
+version: 0.0.1
+repository: https://github.com/w347931956/meteor_net
+issue_tracker: https://github.com/w347931956/meteor_net/issues
 
 environment:
   sdk: ">=3.3.0 <4.0.0"

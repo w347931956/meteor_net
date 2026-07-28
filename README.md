@@ -53,11 +53,18 @@ MeteorNet 是一个基于 Dio 的 Flutter 网络请求封装，目标是让业�
 
 ```yaml
 dependencies:
-  meteor_net:
-    path: .
+  meteor_net: ^0.0.1
 ```
 
-如果作为独立 package 使用，业务 App 引入当前 package 即可。
+如果需要直接依赖 GitHub 上的源码版本，也可以使用：
+
+```yaml
+dependencies:
+  meteor_net:
+    git:
+      url: git@github.com:w347931956/meteor_net.git
+      ref: main
+```
 
 ## 基础用法
 
@@ -212,7 +219,7 @@ final http = DioHttpClient(
 
 ```dart
 final ws = RealtimeClient(
-  urlBuilder: () => Uri.parse('wss://echo.websocket.events'),
+  urlBuilder: () => Uri.parse('wss://ws.postman-echo.com/raw'),
   reconnect: true,
   maxReconnectAttempts: 5,
 );
